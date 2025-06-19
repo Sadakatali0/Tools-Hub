@@ -649,7 +649,96 @@
                 <div class="category-content">
                     <p>Enhance, convert, and optimize your images with our comprehensive suite</p>
                     <ul class="tools-list">
-                        <li><i class="fas fa-arrow-right"></i>Image Converter</li>
+                        <li><i class="fas fa-arrow-right"></i<main>
+            <div class="converter-container">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Upload & Convert</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="upload-area" id="uploadArea">
+                            <div class="upload-icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <p class="upload-text">Drag & drop your image here or click to browse</p>
+                            <button class="btn btn-outline">
+                                <i class="fas fa-folder-open"></i> Choose File
+                            </button>
+                            <input type="file" id="fileInput" accept="image/*" hidden>
+                        </div>
+
+                        <div class="file-info" id="fileInfo">
+                            <div class="info-row">
+                                <span class="info-label">File Name:</span>
+                                <span class="info-value" id="fileName">-</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">File Type:</span>
+                                <span class="info-value" id="fileType">-</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">File Size:</span>
+                                <span class="info-value" id="fileSize">-</span>
+                            </div>
+                            <div class="info-row">
+                                <span class="info-label">Dimensions:</span>
+                                <span class="info-value" id="fileDimensions">-</span>
+                            </div>
+                        </div>
+
+                        <div class="format-selector">
+                            <label>Select Output Format:</label>
+                            <div class="format-options">
+                                <div class="format-option active" data-format="jpeg">JPG</div>
+                                <div class="format-option" data-format="png">PNG</div>
+                                <div class="format-option" data-format="webp">WEBP</div>
+                                <div class="format-option" data-format="gif">GIF</div>
+                            </div>
+                        </div>
+
+                        <div class="conversion-status status-processing" id="convertingStatus">
+                            <i class="fas fa-sync fa-spin"></i> Converting image, please wait...
+                        </div>
+
+                        <div class="conversion-status status-success" id="successStatus">
+                            <i class="fas fa-check-circle"></i> Image converted successfully!
+                        </div>
+
+                        <button class="btn btn-block" id="convertBtn">
+                            <i class="fas fa-exchange-alt"></i> Convert Image
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Preview & Download</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="preview-container">
+                            <h3 class="preview-title">Original Image</h3>
+                            <div class="image-preview" id="originalPreview">
+                                <p class="placeholder-text">No image uploaded yet</p>
+                            </div>
+
+                            <h3 class="preview-title">Converted Image</h3>
+                            <div class="image-preview" id="convertedPreview">
+                                <p class="placeholder-text">Image will appear here after conversion</p>
+                            </div>
+
+                            <div class="action-buttons">
+                                <button class="btn" id="downloadBtn" disabled>
+                                    <i class="fas fa-download"></i> Download Converted
+                                </button>
+                                <button class="btn btn-outline" id="resetBtn">
+                                    <i class="fas fa-redo"></i> Reset Tool
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main></li>
                         <li><i class="fas fa-arrow-right"></i>Image Compressor</li>
                         <li><i class="fas fa-arrow-right"></i>Resizer</li>
                         <li><i class="fas fa-arrow-right"></i>Cropper</li>
